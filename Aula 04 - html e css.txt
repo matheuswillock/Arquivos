@@ -1,0 +1,34 @@
+Aula 04 - Desnvolvimento Full-Stack
+
+iniciando Módulo de HMTL e CSS.
+
+Dilinger. io - site para escrever em MARKDONW
+
+
+fluxo de commit:
+
+
+1°: git add .
+2°git commit -m 'doc: requires para o uso do repo'
+
+Ou;
+
+git add . && git commit -m 'doc: requires para o uso do repo'
+
+-----------------------------------------------------------------------------------------------------
+SEO | Search Engine Optimazation - Otimização dos motores de busca. |
+-----------------------------------------------------------------------------------------------------
+
+tag: abbr marcação para abreviação
+
+head => cabeça = metadados
+body => corpo = todo o site
+header => cabeça = geralmente o menu
+main=> principal
+footer => rodapé
+
+
+
+
+
+

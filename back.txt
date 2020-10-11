@@ -1,0 +1,36 @@
+                                                                                                                                                   Back-end
+
+Responsabilidades:
+	* Receber os pedidos do cliente;
+	* Preparar os pedidos (Regras de Negócios);
+	* Enviar respostas;
+	*  Lidar com dados da aplicação;
+
+Tecnologias:
+	* Linguagem: Javascript;
+	* Node.js
+	* Git Bash
+	* Banco de dados: SQL;
+	* SQlite;
+
+Criando servidor:
+
+	* Criação dos módulos;
+		- npm: Node Package manager (gerenciador de pacotesdo node);
+
+		- Configuração do servidor
+			* Criar e iniciar;
+				- Para criar o nosso servidor precisamos colocar os arquivos de html dentro de uma pasta chamada src ( e também criar um arquivo chamado server.js). 
+				- Criar um pasta chamada public e alocar as pastas assets e scripts para dentro dela.
+				- Para iniciar o server precisamos codar no terminal o código: $ npm init -y.
+				- Estaremos inicializando o node na nossa máquina. Iremos iniciar o projeto na nossa pasta raiz.
+				- $ npm install express. Vamos instalar as dependencias do express. 
+				- Toda vez que fizermos uma nova update no nosso server.js não precisamos ficar ligando e desligando o node através do code: $ node src/server.js;
+				- 				
+					
+			* Página inicial;
+			* Arquivos estáticos;
+
+
+
+

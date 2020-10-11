@@ -1,0 +1,7 @@
+displays
+
+block linha inteira ocupado por um unico elemento.
+inline mais de um elemento ocupa a mesma linha.
+
+Flex 
+deixa os itens um ao lado do outro. podemos usar os atributos align-itens e justify-content para espaçar entre eles.

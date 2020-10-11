@@ -1,0 +1,43 @@
+Roteiro GITFLOW.
+
+Antes de iniciar o code, devemos lançar um git pull para recebermos possiveis atualizações realizadas e finalizadas por outros integrantes do nosso grupo que estão codando no mesmo projeto em branchs diferentes, assim evitar possiveis conflitos no nosso commit e merge com branch master  e após recebermos a resposta ' Already up to date' do nosso terminal então de fato poderemos iniciar o Gitflow.
+
+	0° - Para iniciar o Gitflow atualizaremos o nosso projeto em nossa máquina.
+
+$ git pull
+
+	1° - Criar uma branch nova para comecarmos a codar as novidades.
+
+$ git checkout -b 'nome-da-branch-nova'
+
+	2° - Após, terminar todo o processo de codar os arquivos e finalizar todos os ajustes, seguimos para o seguinte passo.
+	Vamos adicionar as alterações à branch nova que criamos anteriormente.
+
+$ git add .
+
+	3° - Em seguida vamos criar um pacote ('commit') contendo todas as atualizações para encaminharmos para a branch master utlizando o merge, que veremos no próximo passo como realizar.
+
+$ git commit -m 'nome-do-commit-novo'
+
+	4° - Agora, vamos criar um Pull Request ('PR'). Ainda na branch de  criação vamos solicitar a PR com o auxilio do Github, para que possamos inserir as atualizações na branch master.
+
+$ git push origin  'nome-da-branch-nova'
+	
+	5° - Entraremos no repositório referente ao projeto em questão no Github para realizarmos a solicitação da PR.
+
+	6° - Após a criação da PR  no Github, voltamos para  o terminal, iremos para a branch master e em seguida vamos mergear as atualizações.
+	OBS: Lembrando que nos casos de outros componentes do nosso grupo em estivermos trabalhando necessitar revisar o nosso código antes do merge para a master. Só poderemos mergear as updates após o recebimento da mensagem de Pull Request aprovada.
+
+$ git checkout master 
+
+	7° -  Recebido a aprovação da PR realizaremos o merge do conteúdo para a master.
+
+$ git merge 'nome-da-branch-nova'
+
+	8° - Para finalizar o merge lançamos um ultimo push.
+
+$ git push origin master 
+
+	9° - Uma boa prática ao finalizar todo o Gitflow atualizarmos a master.
+
+$ git pull

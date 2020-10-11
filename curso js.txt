@@ -1,0 +1,199 @@
+Java Script
+
+Iniciando aula no Rocketseat.
+
+Introdução ao Java Script.
+
+O que é?
+É uma linguagem que nos permite executar scripts a partir do cliente da nossa aplicação.
+Onde é aplicado?
+Em todos os sites da Web.
+O que é o front-end?
+Tudo que o usuário consegue visualizar.
+
+Conteúdo:
+
+    • Variáveis.
+    • Funções.
+    • Condicionais.
+    • Estruturas de repetição.
+    • Manipulação de DOM.
+    • Requisição assíncronas.
+    • Construir um app do zero.
+
+Configurando Ambiente:
+
+Para começarmos a escrever o Java Script devemos primeiro abrir a Tag: <script></script>.
+O ideal é sempre digitarmos o elemento do JS no final do body devido a uma facilidade maior da renderização do no site; pois, o site de renderiza no navegador de baixo para cima.
+
+Variáveis e Dados:
+
+A variavel ela vai amarzenar algum tipo de valor. Não precisamos tipar o elemento da variavel.
+Sintaxe:
+	var nome = “Matheus”;
+O JS não possui tipagem estática, mas dinâmica. Ou seja, podemos atribuir valores de diferentes formatos a mesma variavel.
+
+Quais são os principais tipos de variáveis:
+
+    • Strings => palavras/nomes
+    • Inteiros=> decimais
+    • Float => peso
+    • Booleanos  => Verdadeiro/False
+    • Vetores => para amarzenar vários elementos
+      Sintaxe: [‘Matheus’, ‘Nathiele’, ‘Marley’];
+    • Objetos => variáveis que guardam mais de um valor.
+
+Operações matemáticas no JS:
+
+Podemos realizar operações matemáticas no JS, como por exemplo:
+
+<script>
+	var x = 10, y = 5;
+	var sub = x – y;
+</script>
+console.log(sub) => 5
+
+
+Funções:
+
+Criamos funções no JS da seguinte forma;
+<script>
+	function soma(numero1, numero2) {
+		var resultado = numero1 + numero2;
+
+		return resultado;
+	}
+	soma(1,2)
+</script>
+
+Condicionais:
+
+// == verifica, se os valores dos parâmetros são iguais. Já o === verifica, se o tipo do parâmetro é o mesmo.//
+
+ Por exemplo:
+ 	
+	if (1==1) => vai nos retornar true.
+	If (1===1) => vai nos retornar false.
+
+Também utilizamos o swicth para darmos condições as funções.
+
+Switch (sexo) {	
+case ‘M’:
+return ‘Masculino’;
+ }
+
+
+Operadores Lógicos:
+
+    • AND => &&
+      var sexo = ‘M’, idade =23;
+      if (sexo === ‘M’ && idade >=18) {
+      console.log (‘OK’);
+       }
+    • OR => | | 
+      var sexo = ‘M’, idade =23;
+      if (sexo === ‘M’ || idade >= 18) {
+      console.log (‘OK’);
+      }
+    • NOT => !==
+      var sexo = ‘M’, idade =23;
+      if (sexo !== ‘M’) {
+      console.log (‘OK’);
+      }
+      
+Condição ternária:
+
+Se aplica quando temos um ‘If’ e logo depois um ‘Else’. Ou seja, quando nós temos só duas verificações dentro do ‘If’.
+Var sexo = ’M’;
+If (sexo === ‘M’) { 
+return ‘Masculino’;
+} else { 
+return ‘feminino’;
+}
+Para tirar o excesso de palavras e deixá-lo menos ‘verboso’ escrevemos as funções da seguinte forma.
+Var sexo = ’M’;
+Var retorno = (sexo === ‘M’)? ‘Masculino’: ‘Feminino;
+console.log (retorno);
+Quando na mesma linha utilizamos ‘?’ e ‘:’ fazemos uma condição simples para verificar. Se não colocamos uma segunda condição para verificar.
+
+
+Estrutura de repetição:
+ 
+For e While, vamos escrever das seguintes formas.
+
+For:
+for (var i = 0; i <= 100 ; i++) {
+console.log(i);
+}
+
+While 
+var j = 0;
+while (j <= 100) {
+console.log(j);
+j++;
+}
+
+Qnado utilizaro o for?
+Sempre que souber o tamanho do intervalo.
+
+Qnado utilizaro o while?
+Quando não souber o quantas vezes o fluxo do intervalo será executado.
+
+Intervalo e timeout:
+
+Intervalo:
+É alguma função que executa várias vezes dentro de um intervalo.
+Function narutoUzumaki() {
+	console.log(‘Vou ser Hokage. Tô certo.’);
+}
+
+setInterval(narutoUzumaki, 1000);
+
+Timeout:
+Em vez de repetir nosso parâmetro ele vai repetir apenas uma vez. Porém ele vai repetir com delay com o tempo pré-determinado.
+
+
+Exercícios: Módulo 01
+1º exercício
+Crie uma função que dado o objeto a seguir:
+
+
+Retorne o seguinte conteúdo:
+
+
+2º exercício
+Crie uma função que dado um intervalo (entre x e y) exiba todos números pares:
+
+
+3º exercício
+Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript" e retorna um booleano true/false caso exista ou não.
+
+Dica: para verificar se um vetor contém um valor, utilize o método indexOf.
+
+4º exercício
+Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+
+
+5º exercício
+Dado o seguinte vetor de objetos:
+
+Escreva uma função que produza o seguinte resultado:
+
+Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array com um separador utilize o join.
+
+
+OBSERVAÇÕES:
+
+Em JS quando escrevemos as os objetos das variáveis indicamos os resultados delas com ‘:’, conforme abaixo:
+
+Var endereco = {
+Rua: “Rua dos Pinheiros”,
+Número: 1293,
+Bairro: “Centro”,
+Cidade: “São Paulo”,
+Uf: “SP”
+};
+
+
+
+
